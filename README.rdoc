@@ -4,7 +4,7 @@ Formtastic State Selects adds the :state input type in formtastic form builder
 
 == Installation
 
-First install install the state_select plugin http://github.com/sprsquish/state_select
+First install the state_select plugin http://github.com/sprsquish/state_select
 
 then,
 

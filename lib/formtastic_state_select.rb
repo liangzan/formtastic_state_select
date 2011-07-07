@@ -4,9 +4,10 @@ module FormtasticStateSelect
     raise "To use the :state input, please install the state_select plugin http://github.com/sprsquish/state_select" unless self.respond_to?(:state_select)
 
     html_options = options.delete(:input_html) || {}
+    country = options.delete(:country) || 'US'
 
     self.label(method, options_for_label(options)) <<
-      self.state_select(method, strip_formtastic_options(options), html_options)
+      self.state_select(method, country, strip_formtastic_options(options), html_options)
   end
 
 end
